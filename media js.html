@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+   <title>Calcular média</title>
+   Nome <input id= "nota" type="name"> <br />
+   Primeira nota <input id="nota1" type="number"> <br />
+   Segunda  nota <input id="nota2" type="number"> <br />
+   <button onclick="media()">Calcular Média</button>
+
+   <script type="text/javascript">
+
+    function media(){
+     var nota1 = parseFloat(document.getElementById("nota1").value);
+     var nota2 = parseFloat(document.getElementById("nota2").value);
+
+     var media = (nota1 + nota2)/2 ;
+
+     if(media >= 7)
+      
+       alert("Parabéns você foi aprovado! Média "+media);
+     }
+ </script>
+
+ </head>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <body>
+
+            <script>
+                var year_born = prompt("Qual ano você nasceu:", "Escreva aqui");
+var d = new Date();
+var n = d.getFullYear();
+function getAge(birthYear){
+	var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    age = currentYear - birthYear;
+    return age;
+}
+calculatedAge = getAge(year_born);
+alert("Olá, " + "você tem " + calculatedAge + " anos!");
+            </script>
+        </body>
+    </head>
+    </html>
+
+
+
